@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="/assets/images/logo verde.svg" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/73d4e66af6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <h1>
+      <img src="./assets/images/logo verde.svg" class="logo" alt="logo" />
+    </h1>
+    <div class="columna_izquierda">
+      <form action="">
+        <input
+          type="text"
+          name="texto"
+          id="texto"
+          placeholder="ingrese texto acá"
+        />
+
+        <p class="disclaimer">
+          <i class="fa-solid fa-circle-info"></i> solo letras minisculas y sin
+          tildes
+        </p>
+        <div class="botones">
+          <button id="encriptar" type="reset">encriptar</button>
+          <button id="desencriptar" type="reset">desencriptar</button>
+        </div>
+      </form>
+
+      <div class="columna_derecha">
+        <div class="response">
+          <img src="./assets/images/persona verde.png" id="persona" alt="" />
+          <p id="respuesta">ningún mensaje encontrado</p>
+        </div>
+
+        <button id="copiar">copiar</button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
